@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+   <head>
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title>Swad</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <!-- bootstrap css -->
+      <link rel="stylesheet" type="text/css" href="/static/css/bootstrap.min.css">
+      <!-- style css -->
+      <link rel="stylesheet" type="text/css" href="/static/css/style.css">
+      <!-- Responsive-->
+      <link rel="stylesheet" href="/static/css/responsive.css">
+      <!-- fevicon -->
+      <link rel="icon" href="/static/images/fevicon.png" type="/static/image/gif" />
+      <!-- font css -->
+      <link href="/static/https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+      <!-- Scrollbar Custom CSS -->
+      <link rel="stylesheet" href="/static/css/jquery.mCustomScrollbar.min.css">
+      <!-- Tweaks for older IEs-->
+      <link rel="stylesheet" href="/static/https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+   </head>
+   <body>
+      <!-- header section start -->
+      <div class="header_section">
+         <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+               <a class="navbar-brand"href="home.html"><img src=""></a>
+               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+               </button>
+               <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav ml-auto">
+                     <li class="nav-item active">
+                        <a class="nav-link" href="/user/home"><span class="padding5"><i class="fa fa-angle-right"></i></span>Home</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="/user/about" mathod=get>  <span class="padding5"><i class="fa fa-angle-right"></i></span>About</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="/user/blog"><span class="padding5"><i class="fa fa-angle-right"></i></span>Blog</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="/user/services"><span class="padding5"><i class="fa fa-angle-right"></i></span>Services</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="/user/contact"><span class="padding5"><i class="fa fa-angle-right"></i></span>Contact Us</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="/customer/order"><span class="padding5"><i class="fa fa-angle-right"></i></span>Order</a>
+                     </li>
+                  </ul>
+                  <form class="form-inline my-2 my-lg-0">
+                     <div class="login_bt">
+                        <ul>
+                           <li><a href="/user/login">Login</a></li>
+                           <li><a href="/user/login"><i class="fa fa-user" aria-hidden="true"></i></a></li>
+                        </ul>
+                     </div>
+                  </form>
+               </div>
+            </nav>
+         </div>
+         <!-- banner section start --> 
+         <div class="banner_section layout_padding">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-4">
+                     <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                           <div class="carousel-item active">
+                              <div class="banner_img"><img src="/static/images/banner-img.png"></div>
+                           </div>
+                           <div class="carousel-item">
+                              <div class="banner_img"><img src="/static/images/banner-img.png"></div>
+                           </div>
+                           <div class="carousel-item">
+                              <div class="banner_img"><img src="/static/images/banner-img.png"></div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-8">
+                     <h1 class="banner_taital">Food Delivery</h1>
+                     
+                     <!-- select box section start -->
+                     <div class="container">
+                        <div class="select_box_section">
+                           <div class="select_box_main">
+                              <div class="row">
+                                 <div class="col-md-4 select-outline">
+                                    <select class="mdb-select md-form md-outline colorful-select dropdown-primary">
+                                       <option value="" disabled selected>City</option>
+                                       <option value="1">Ahmedabad</option>
+                                       <option value="2">Surat</option>
+                                       <option value="3">Rajkot</option>
+                                    </select>
+                                 </div>
+                                 <div class="col-md-4 select-outline">
+                                    <select class="mdb-select md-form md-outline colorful-select dropdown-primary">
+                                       <option value="" disabled selected>Restaurant</option>
+                                       <option value="1">Option 1</option>
+                                       <option value="2">Option 2</option>
+                                       <option value="3">Option 3</option>
+                                    </select>
+                                 </div>
+                                 <div class="col-md-4 select-outline">
+                                    <select class="mdb-select md-form md-outline colorful-select dropdown-primary">
+                                       <option value="" disabled selected>Food</option>
+                                       <option value="1">Option 1</option>
+                                       <option value="2">Option 2</option>
+                                       <option value="3">Option 3</option>
+                                    </select>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="search_btn"><a href="/customer/order/">Search Now</a></div>
+                        </div>
+                     </div>
+                     <!-- select box section end -->
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- banner section end -->
+      </div>
+      <!-- header section end -->
+      <!-- services section start -->
+      <div class="services_section layout_padding">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <h1 class="services_taital">Popular Goods Foods</h1>
+                  
+                  <div class="nav-tabs-navigation">
+                     <div class="nav-tabs-wrapper">
+                        <ul class="nav " data-tabs="tabs">
+                           <li class="nav-item active">
+                              <a class="nav-link " href="#" data-toggle="tab">Fastfood</a>
+                           </li>
+                           <li class="nav-item">
+                              <a class="nav-link " href="#" data-toggle="tab">Hot Pizza</a>
+                           </li>
+                           <li class="nav-item">
+                              <a class="nav-link " href="#" data-toggle="tab">Chapati  Food</a>
+                           </li>
+                           <li class="nav-item">
+                              <a class="nav-link " href="#" data-toggle="tab">Biryani & Meat</a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="services_section_2">
+               <div class="row">
+                  <div class="col-lg-3 col-sm-6">
+                     <div class="food_img"><img src="/static/images/img-1.png"></div>
+                     <h3 class="food_text">Cheeseburger</h3>
+                     <p class="more_text">A cheeseburger is a sandwich that consists of a grilled or fried beef patty topped with cheese, typically cheddar or American, and served on a bun. It is a popular fast food item and can be customized with various toppings such as lettuce, tomato, onion, pickles, ketchup, and mustard. It is often served with fries and a soft drink.</p>
+                     <div class="read_bt"><a href="https://en.wikipedia.org/wiki/Cheeseburger">Read More</a></div>
+                  </div>
+                  <div class="col-lg-3 col-sm-6">
+                     <div class="food_img"><img src="/static/images/img-2.png"></div>
+                     <h3 class="food_text">Dosa</h3>
+                     <p class="more_text">Dosa is a savory crepe-like dish that originated in South India but is now popular across the country and beyond. It is made by fermenting a batter of rice and lentils, which is then spread thin and cooked on a griddle. Dosa can be served plain or with a variety of fillings and chutneys. It is often eaten for breakfast or as a snack.</p>
+                     <div class="read_bt"><a href="https://en.wikipedia.org/wiki/Dosa_(food)">Read More</a></div>
+                  </div>
+                  <div class="col-lg-3 col-sm-6">
+                     <div class="food_img"><img src="/static/images/img15.jpg"></div>
+                     <h3 class="food_text">Pani Puri</h3>
+                     <p class="more_text">Pani puri is a popular street food in India that consists of small, crispy balls filled with spiced mashed potatoes, chickpeas, or sprouts, and served with a flavorful spiced water, or pani.Pani puri is a popular snack or appetizer and is enjoyed for its unique combination of flavors and textures. </p>
+                     <div class="read_bt"><a href="https://en.wikipedia.org/wiki/Panipuri">Read More</a></div>
+                  </div>
+                  <div class="col-lg-3 col-sm-6">
+                     <div class="food_img"><img src="/static/images/img-11.jpg"></div>
+                     <h3 class="food_text">Pizza</h3>
+                     <p class="more_text">Pizza is a popular Italian dish that has become a global favorite. It is typically made from a dough base, which is topped with tomato sauce, cheese, and various toppings, such as meat, vegetables, and herbs.Pizza can be customized to suit different tastes and is often enjoyed as a fast food or casual meal.</p>
+                     <div class="read_bt"><a href="https://en.wikipedia.org/wiki/Pizza">Read More</a></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- services section end -->
+      <!-- about section start -->
+      <div class="about_section">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-6">
+                  <div class="about_img"><img src="/static/images/about-img.png"></div>
+               </div>
+               <div class="col-md-6">
+                  <div class="about_taital_main">
+                     <div class="about_taital">About Us</div>
+                     <p class="about_text">Welcome to our food delivery website, where we strive to bring you the best and most convenient food delivery experience possible. Our mission is to provide a hassle-free way for customers to order food from their favorite restaurants and have it delivered to their doorstep in a timely manner.</p>
+                     <div class="readmore_bt"><a href="/user/about">Read More</a></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- about section end -->
+      <!-- blog section start -->
+      <div class="blog_section layout_padding">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <h1 class="blog_taital">Cafes & Restaurants</h1>
+               
+               </div>
+            </div>
+            <div class="blog_section_2">
+               <div class="row">
+                  <div class="col-md-4">
+                     <div class="blog_box active">
+                        <div class="blog_img"><img src="/static/images/img-7.png"></div>
+                        <h4 class="burger_text active">Burger Farm</h4>
+                        <h6 class="date_text">Monday - Saturday</h6>
+                        <h6 class="time_text">09:00 - 18:00</h6>
+                        
+                     </div>
+                  </div>
+                  <div class="col-md-4">
+                     <div class="blog_box">
+                        <div class="blog_img"><img src="/static/images/img-8.png"></div>
+                        <h4 class="burger_text">Burger King</h4>
+                        <h6 class="date_text">Monday - Saturday</h6>
+                        <h6 class="time_text">09:00 - 18:00</h6>
+                        
+                     </div>
+                  </div>
+                  <div class="col-md-4">
+                     <div class="blog_box">
+                        <div class="blog_img"><img src="/static/images/img-9.png"></div>
+                        <h4 class="burger_text">Dhosa Hub</h4>
+                        <h6 class="date_text">Monday - Saturday</h6>
+                        <h6 class="time_text">09:00 - 18:00</h6>
+                        
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="blog_section_2">
+               <div class="row">
+                  <div class="col-md-4">
+                     <div class="blog_box">
+                        <div class="blog_img"><img src="/static/images/img-10.png"></div>
+                        <h4 class="burger_text">KFC</h4>
+                        <h6 class="date_text">Monday - Saturday</h6>
+                        <h6 class="time_text">09:00 - 18:00</h6>
+                        
+                     </div>
+                  </div>
+                  <div class="col-md-4">
+                     <div class="blog_box">
+                        <div class="blog_img"><img src="/static/images/img-11.jpg"></div>
+                        <h4 class="burger_text">Pizza Hut</h4>
+                        <h6 class="date_text">Monday - Saturday</h6>
+                        <h6 class="time_text">09:00 - 18:00</h6>
+                        
+                     </div>
+                  </div>
+                  <div class="col-md-4">
+                     <div class="blog_box">
+                        <div class="blog_img"><img src="/static/images/img-12.png"></div>
+                        <h4 class="burger_text">Taco Bell</h4>
+                        <h6 class="date_text">Monday - Saturday</h6>
+                        <h6 class="time_text">09:00 - 18:00</h6>
+                        
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="seemore_bt"><a href="/customer/order/">See More</a></div>
+         </div>
+      </div>
+      <!-- blog section end -->
+      <!-- testimonial section start -->
+      <div class="testimonial_section layout_padding">
+         <div class="container">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+               <ol class="carousel-indicators">
+                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                 <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                 <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+               </ol>
+               <div class="carousel-inner">
+                  <div class="carousel-item active">
+                     <div class="row">
+                        <div class="col-md-12">
+                           <h6 class="testimonial_taital">Testimonial</h6>
+                           <h1 class="testimonial_taital_2">Why Our Clients Choose Us</h1>
+                           <div class="testimonial_section_2 layout_padding">
+                              <div class="row">
+                                 <div class="col-md-12">
+                                    <div class="client_box">
+                                       <div class="client_img"><img src=""></div>
+                                       <h3 class="client_name_text">Jeet rana </h3>
+                                       <h5 class="long_text">(long established)</h5>
+                                       <p class="client_text">"I've been using this food delivery service for several months now, and I couldn't be happier with the convenience and quality of the service. The website is easy to navigate, and the selection of restaurants and cuisines is extensive. I appreciate the real-time tracking feature, which allows me to monitor my order and plan accordingly. Every order I've received has been fresh and delicious, and the delivery has always been prompt and courteous. I've recommended this service to all my friends and family, and I look forward to continuing to use it for all my food delivery needs." </p>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>                  
+                  </div>
+                  <div class="carousel-item">
+                     <div class="row">
+                        <div class="col-md-12">
+                           <h6 class="testimonial_taital">Testimonial</h6>
+                           <h1 class="testimonial_taital_2">Why Our Clients Choose Us</h1>
+                           <div class="testimonial_section_2 layout_padding">
+                              <div class="row">
+                                 <div class="col-md-12">
+                                    <div class="client_box">
+                                       <div class="client_img"><img src=""></div>
+                                       <h3 class="client_name_text">Jay Patel</h3>
+                                       <h5 class="long_text">(long established)</h5>
+                                       <p class="client_text">"I have been a loyal customer of this food delivery website for several months now, and I am always impressed with the quality of service. The website is user-friendly and easy to navigate, and the delivery is always on time. I appreciate the variety of restaurants and cuisines available, and the special promotions and deals are a great added bonus. Overall, I highly recommend this food delivery service to anyone looking for a hassle-free way to order their favorite foods."</p>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>                   
+                  </div>
+                  <div class="carousel-item">
+                     <div class="row">
+                        <div class="col-md-12">
+                           <h6 class="testimonial_taital">Testimonial</h6>
+                           <h1 class="testimonial_taital_2">Why Our Clients Choose Us</h1>
+                           <div class="testimonial_section_2 layout_padding">
+                              <div class="row">
+                                 <div class="col-md-12">
+                                    <div class="client_box">
+                                       <div class="client_img"><img src="/static/images/client-img.png"></div>
+                                       <h3 class="client_name_text">Rushi Mehta</h3>
+                                       <h5 class="long_text">(long established)</h5>
+                                       <p class="client_text">"I recently used this food delivery service for the first time, and I must say I was thoroughly impressed. The ordering process was quick and easy, and the food arrived exactly when it was supposed to. The quality of the food was exceptional, and it was evident that the restaurant took great care in preparing it. I am definitely going to be using this service again in the future and highly recommend it to anyone looking for a reliable food delivery option."</p>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>                  
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- testimonial section end -->
+      <!-- footer section start -->
+      <div class="footer_section layout_padding">
+         <div class="container">
+            <div class="footer_section_2">
+               <div class="row">
+                  <div class="col-lg-3 col-sm-6">
+                     <h2 class="useful_text">About</h2>
+                     <p class="dummy_text">Welcome to our food delivery website, where we strive to bring you the best and most convenient food delivery experience possible. Our mission is to provide a hassle-free way for customers to order food from their favorite restaurants and have it delivered to their doorstep in a timely manner.</p>
+                  </div>
+                  <div class="col-lg-3 col-sm-6">
+                     <h2 class="useful_text">Links</h2>
+                     <div class="footer_menu">
+                        <ul>
+                           <li class="active"><a href="/user/home">Home</a></li>
+                           <li><a href="/user/about">About</a></li>
+                           <li><a href="#">Softwere</a></li>
+                           <li><a href="#">Company</a></li>
+                           <li><a href="/user/blog">Blog</a></li>
+                           <li><a href="/user/testimonial">Testimonial</a></li>
+                           <li><a href="/user/contact">Contact</a></li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="col-lg-3 col-sm-6">
+                     <h2 class="useful_text">Follow Us</h2>
+                     <div class="social_icon">
+                        <ul>
+                           <li><a href="#"><span class="padding_15"><img src="/static/images/facebook-icon.png"></span>Facebook</a></li>
+                           <li><a href="#"><span class="padding_15"><img src="/static/images/twitter-icon.png"></span>Twitter</a></li>
+                           <li><a href="#"><span class="padding_15"><img src="/static/images/linkedin-icon.png"></span>Linkedin</a></li>
+                           <li><a href="#"><span class="padding_15"><img src="/static/images/youtub-icon.png"></span>Youtube</a></li>
+                           <li><a href="#"><span class="padding_15"><img src="/static/images/instagram-icon.png"></span>Instagram</a></li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="col-lg-3 col-sm-6">
+                     <h2 class="useful_text">Newsletter</h2>
+                     <div class="form-group">
+                        <textarea class="update_mail" placeholder="Enter Your Email" rows="5" id="comment" name="Enter Your Email"></textarea>
+                        <div class="subscribe_bt"><a href="#">Subscribe</a></div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- footer section end -->
+      <!-- copyright section start -->
+      <div class="copyright_section">
+         <div class="container">
+            <p class="copyright_text">2023 All Rights Reserved </p>
+         </div>
+      </div>
+      <!-- copyright section end -->
+      <!-- Javascript files-->
+      <script src="/static/js/jquery.min.js"></script>
+      <script src="/static/js/popper.min.js"></script>
+      <script src="/static/js/bootstrap.bundle.min.js"></script>
+      <script src="/static/js/jquery-3.0.0.min.js"></script>
+      <script src="/static/js/plugin.js"></script>
+      <!-- sidebar -->
+      <script src="/static/js/jquery.mCustomScrollbar.concat.min.js"></script>
+      <script src="/static/js/custom.js"></script>
+      <!-- javascript --> 
+   </body>
+</html>

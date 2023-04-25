@@ -1,0 +1,159 @@
+{% extends 'customer/base.html' %}
+
+{% block content %}
+<div class="container mb-5">
+    <div class="row justify-content-center mt-1">
+        <div class="col-md-12 col-sm-12 p-4">
+            <form method="POST">
+                {% csrf_token %}
+                <div class="pt-5">
+                    <h2>Main Course</h2>
+                    {% for maincourse in maincourses %}
+                    <div class="row">
+                        <div class="col-md-2 col-sm-12">
+                            <img class="rounded" src="{{ maincourse.image.url }}" width="150" height="100"/>
+                        </div>
+                        <div class="col-md-8 col-sm-12">
+                            <div class="d-flex flex-row">
+                                <div class="form-group form-check">
+                                    <input type="checkbox" name="items[]" class="form-check-input" value="{{ maincourse.pk }}">
+                                    <label class="form-check-label">{{ maincourse.name }}</label>
+                                </div>
+                                <p class="font-weight-bold pl-5">Price {{ maincourse.price }}Rs</p>
+                            </div>
+                            <p>{{ maincourse.description }}</p>
+                        </div>
+                    </div>
+                    <hr />
+                {% endfor %}
+                </div>
+
+                <div class="pt-5">
+                    <h2>Starters</h2>
+                    {% for starter in starters %}
+                    <div class="row mt-4">
+                        <div class="col-md-2 col-sm-12">
+                            <img class="rounded" src="{{ starter.image.url }}" width="150" height="100"/>
+                        </div>
+                        <div class="col-md-8 col-sm-12">
+                            <div class="d-flex flex-row">
+                                <div class="form-group form-check">
+                                    <input type="checkbox" name="items[]" class="form-check-input" value="{{ starter.pk }}">
+                                    <label class="form-check-label">{{ starter.name }}</label>
+                                </div>
+                                <p class="font-weight-bold pl-5">Price {{ starter.price }}Rs</p>
+                            </div>
+                            <p>{{ starter.description }}</p>
+                        </div>
+                    </div>
+                    <hr />
+                    {% endfor %}
+                </div>
+
+                <div class="pt-5">
+                    <h2>Desserts</h2>
+                    {% for dessert in desserts %}
+                    <div class="row mt-4">
+                        <div class="col-md-2 col-sm-12">
+                            <img class="rounded" src="{{ dessert.image.url }}" width="150" height="100"/>
+                        </div>
+                        <div class="col-md-8 col-sm-12">
+                            <div class="d-flex flex-row">
+                                <div class="form-group form-check">
+                                    <input type="checkbox" name="items[]" class="form-check-input" value="{{ dessert.pk }}">
+                                    <label class="form-check-label">{{ dessert.name }}</label>
+                                </div>
+                                <p class="font-weight-bold pl-5"> Price {{ dessert.price }}Rs</p>
+                            </div>
+                            <p>{{ dessert.description }}</p>
+                        </div>
+                    </div>
+                    <hr />
+                    {% endfor %}
+                </div>
+
+                <div class="pt-5">
+                    <h2>Drinks</h2>
+                    {% for drink in drinks %}
+                    <div class="row mt-4">
+                        <div class="col-md-2 col-sm-12">
+                            <img class="rounded" src="{{ drink.image.url }}" width="150" height="100"/>
+                        </div>
+                        <div class="col-md-8 col-sm-12">
+                            <div class="d-flex flex-row">
+                                <div class="form-group form-check">
+                                    <input type="checkbox" name="items[]" class="form-check-input" value="{{ drink.pk }}">
+                                    <label class="form-check-label">{{ drink.name }}</label>
+                                </div>
+                                <p class="font-weight-bold pl-5">Price {{ drink.price }}Rs</p>
+                            </div>
+                            <p>{{ drink.description }}</p>
+                        </div>
+                    </div>
+                    <hr />
+                    {% endfor %}
+                </div>
+
+                <div class="form-group pt-3">
+                    <label for="name">Full Name</label>
+                    <input required  class="form-control" type="text" placeholder="Your Name" name="name" />
+                </div>    
+
+                <div class="form-group pt-3">
+                    <label for="name">Email Address</label>
+                    <input required  class="form-control" type="text" placeholder="Your Email" name="Email" />
+                </div>    
+
+                <div class="form-group pt-3">
+                    <label for="name">Address</label>
+                    <input required  class="form-control" type="text" placeholder="Your Address" name="Address" />
+                </div>    
+
+                <div class="row">
+                    <div class="col-md-4 col-sm-12">
+                        <div class="form-group pt-3">
+                            <label for="name">City</label>
+                            <input required  class="form-control" type="text" placeholder="Your City" name="City" />
+                        </div>   
+                    </div>     
+
+                    <div class="col-md-4 col-sm-12">
+                        <div class="form-group pt-3">
+                            <label for="name">Pincode</label>
+                            <input required  class="form-control" type="text" placeholder="Your Pincode" name="Pincode" />
+                        </div> 
+                    </div>
+                </div>
+                
+                
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#submitModal">
+                    Submit Order
+                </button>
+
+
+                {% comment %} <button class="btn btn-dark mt-5">Place Order!</button> {% endcomment %}
+
+
+                <!-- Modal -->
+                <div class="modal fade" id="submitModal" tabindex="-1" role="dialog" aria-labelledby="submitModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="submitModalLabel">Submit your Order</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-light" data-dismiss="modal">Go Back</button>
+                                <button type="submit" class="btn btn-dark">Place Order</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock content %}
